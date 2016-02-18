@@ -27,13 +27,45 @@
                                             <action selector="shareTweet:" destination="BYZ-38-t0r" id="Sq3-Zk-hBo"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem systemItem="action" id="wlW-ka-vqn">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="shareFacebook:" destination="BYZ-38-t0r" id="c8n-8q-VGp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="action" id="Vdo-6D-q93">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="shareMore:" destination="BYZ-38-t0r" id="EXB-9g-VG4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="action" id="vbu-hr-HWM">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="shareOops:" destination="BYZ-38-t0r" id="Isp-ky-xvi"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <color key="barTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                             </toolbar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2zP-If-cZ1">
-                                <rect key="frame" x="-4" y="64" width="328" height="504"/>
+                                <rect key="frame" x="-4" y="64" width="328" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <string key="text">TwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitterTwitter</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Uzi-NU-Fxl">
+                                <rect key="frame" x="-4" y="400" width="328" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">MoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMoreMore</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="j5E-Jx-2XU">
+                                <rect key="frame" x="-4" y="232" width="328" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">FacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebook</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -42,15 +74,27 @@
                         <constraints>
                             <constraint firstItem="WtU-K3-3i6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="2LL-vz-dx5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WtU-K3-3i6" secondAttribute="trailing" constant="-20" id="AWV-n6-fJw"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2zP-If-cZ1" secondAttribute="bottom" id="BoG-PF-4mH"/>
+                            <constraint firstItem="Uzi-NU-Fxl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="CAl-W1-Duf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uzi-NU-Fxl" secondAttribute="bottom" constant="8" symbolic="YES" id="EQf-aQ-qa8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uzi-NU-Fxl" secondAttribute="trailing" constant="-20" id="FSy-i4-sZz"/>
+                            <constraint firstItem="Uzi-NU-Fxl" firstAttribute="height" secondItem="2zP-If-cZ1" secondAttribute="height" id="HBx-Ai-T5s"/>
+                            <constraint firstItem="Uzi-NU-Fxl" firstAttribute="width" secondItem="2zP-If-cZ1" secondAttribute="width" id="Hw4-le-WIE"/>
                             <constraint firstItem="WtU-K3-3i6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="NLv-s2-UdA"/>
                             <constraint firstItem="2zP-If-cZ1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="QwU-IJ-ofH"/>
-                            <constraint firstItem="2zP-If-cZ1" firstAttribute="top" secondItem="WtU-K3-3i6" secondAttribute="bottom" id="lQy-86-Ze1"/>
+                            <constraint firstItem="j5E-Jx-2XU" firstAttribute="height" secondItem="2zP-If-cZ1" secondAttribute="height" id="TIP-rg-qUy"/>
+                            <constraint firstItem="j5E-Jx-2XU" firstAttribute="width" secondItem="2zP-If-cZ1" secondAttribute="width" id="cWO-MD-Th5"/>
+                            <constraint firstItem="j5E-Jx-2XU" firstAttribute="top" secondItem="2zP-If-cZ1" secondAttribute="bottom" constant="8" symbolic="YES" id="kOb-yF-nEo"/>
+                            <constraint firstItem="2zP-If-cZ1" firstAttribute="top" secondItem="WtU-K3-3i6" secondAttribute="bottom" symbolic="YES" id="lQy-86-Ze1"/>
+                            <constraint firstItem="Uzi-NU-Fxl" firstAttribute="top" secondItem="j5E-Jx-2XU" secondAttribute="bottom" constant="8" symbolic="YES" id="mEx-Bf-NM2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j5E-Jx-2XU" secondAttribute="trailing" constant="-20" id="u9H-iz-e4v"/>
+                            <constraint firstItem="j5E-Jx-2XU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="vgC-vg-8B4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2zP-If-cZ1" secondAttribute="trailing" constant="-20" id="xRB-VK-ttH"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tweetTextView" destination="2zP-If-cZ1" id="cyP-so-N80"/>
+                        <outlet property="FacebookTextView" destination="j5E-Jx-2XU" id="Fof-Sh-kkj"/>
+                        <outlet property="moreTextView" destination="Uzi-NU-Fxl" id="bVi-Xf-gjk"/>
+                        <outlet property="twitterTextView" destination="2zP-If-cZ1" id="k6O-Qk-Wdi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
